@@ -105,7 +105,7 @@ h1.menu-bar {
 
 .sub-search li {
     float: left;
-    width: 18%;
+    width: 170px;
     margin-right: 17px;
     font-size: 20px;
     line-height: 1.4;
@@ -131,6 +131,7 @@ h1.menu-bar {
     /* text-shadow: 2px 2px 2px #fff; */
 		
 }
+/*
 .sub-search li a:hover{
 	
     color: #f5f1f2;
@@ -138,10 +139,8 @@ h1.menu-bar {
     list-style: none;
     border-radius: 25px;
     background-color: #955e96;
-    /* text-shadow: 2px 2px 2px #fff; */
-		
 }
-
+*/
 .sub-content {
 	width: 100%;
 	

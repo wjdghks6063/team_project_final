@@ -44,12 +44,12 @@ public class Manager_dao {
 			while(rs.next()) {
 				String no 				= rs.getString("no");
 				String vol_title 		= rs.getString("title");
-				String vol_name 			= rs.getString("voname");
+				String vol_name 		= rs.getString("voname");
 				String vol_site 		= rs.getString("volunteersite");
 				String do_category 		= rs.getString("local");
 				String do_today 		= rs.getString("today");
 				String vol_start_date 	= rs.getString("start_date");
-				String vol_end_date 		= rs.getString("end_date");
+				String vol_end_date 	= rs.getString("end_date");
 				int vol_total 			= rs.getInt("total");
 				int vol_goal 			= rs.getInt("goal");
 				

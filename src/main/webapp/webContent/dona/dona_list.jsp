@@ -72,35 +72,35 @@
 		<input type="hidden" name="t_search">
 	<div class="sub-search">
 		<ul class="mini-menu">
-                <li>
-                	<a href="javascript:goSearch('')"  >
+				<a href="javascript:goSearch('')"  >
+                	<li>
                 		<h1 class="menu-bar"><i class="fas fa-globe-asia"></i></h1>전체 검색
-               		</a>
-				</li>
+					</li>
+				</a>
                    
-				<li>
-					<a href="javascript:goSearch('child')" >
-						<h1 class="menu-bar"><i class="fas fa-child"></i></h1>아이들
-					</a>
-				</li>
-                   
-				<li>
-					<a href="javascript:goSearch('senior')">
-						<h1 class="menu-bar"><i class="fas fa-user"></i></h1>어르신
-					</a>
-				</li>
-                   
-				<li>
-					<a href="javascript:goSearch('disabled')" >
-						<h1 class="menu-bar"><i class="fab fa-accessible-icon"></i></h1>장애인
-					</a>
-				</li>
-                   
-				<li>
-					<a href="javascript:goSearch('disaster')">
+                <a href="javascript:goSearch('child')" >   
+					<li>
+						<h1 class="menu-bar"><i class="fas fa-child"></i></h1>아동
+					</li>
+                </a>    
+                
+                <a href="javascript:goSearch('senior')">
+					<li>
+						<h1 class="menu-bar"><i class="fas fa-user"></i></h1>노인
+					</li>
+                </a>   
+                
+                <a href="javascript:goSearch('disabled')" >
+					<li>
+						<h1 class="menu-bar"><i class="fab fa-accessible-icon"></i></h1>장애
+					</li>
+                </a>   
+                
+                <a href="javascript:goSearch('disaster')">
+					<li>
 						<h1 class="menu-bar"><i class="fas fa-house-damage"></i></h1>재난
-					</a>
-				</li>
+					</li>
+				</a>
 		</ul>
 	</div>
 	</form>
