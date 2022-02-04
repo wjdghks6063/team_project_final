@@ -26,7 +26,7 @@
     font-weight: bold;
     height: 46px;
     line-height: 46px;
-    text-shadow: 0.5px 0.8px #89515140, 0.5px 1.5px #ea7e7e;
+    text-shadow: 0.5px 0.8px #aaa7a5, 0.5px 1.5px #b69a75;
 }
 .paging .pag-prev, .paging .pag-next, .paging .pag-first, .paging .pag-last {
     min-width: 38px;
@@ -57,22 +57,22 @@
     margin-left: -5px;
 }
 .paging .num a.active, .paging .num .active {
-    background-color: #fda1a1;
+    background-color: #bbb6b3;
     color: #fff;
-    box-shadow: 1px 1px 3px #cf3232d4;
+    box-shadow: 1px 1px 3px #7a7165;
 }
 .paging a + a, .paging a + .active, .paging .active + a {
     margin-left: 5px;
 }
 .paging .num a {
     display: inline-block;
-    background-color: #FFE0E0;
-    box-shadow: 1px 1px 3px #d69c9c;
+    background-color: #f1ebe4;
+    box-shadow: 1px 1px 3px #9e978e;
 }
 .paging .num a:hover {
     color: #fffff6;
-    background-color: #fda1a1;
-    box-shadow: inset 1px 1px 3px #d69c9c;
+    background-color: #bbb6b3;
+    box-shadow: inset 1px 1px 3px #8e7f6d;
 }
 .pag-prev::before, .pag-first::before, .pag-first::after {
     width: 10px;
@@ -85,13 +85,10 @@
     margin-bottom: 3px;
 }
 .pag-prev::before, .pag-first::before, .pag-first::after {
-    width: 12px;
-    height: 12px;
-    margin-bottom: 3px;
     margin-top: 15px;
-    border: 0 solid #ea7e7e;
+    border: 0 solid #a79784;
     border-width: 0 0 2px 2px;
-    box-shadow: -1px 2px 2px -1px #ffc0c0;
+    box-shadow: -1px 2px 2px -1px #f1ebe4;
     transform: rotate(45deg);
 }
 .pag-prev::before, .pag-next::before, .pag-first::before, .pag-last::before, .pag-first::after, .pag-last::after {
@@ -124,12 +121,9 @@
     margin-left: -5px;
 }
 .pag-next::before, .pag-last::before, .pag-last::after {
-    width: 12px;
-    height: 12px;
-    margin-bottom: 3px;
     margin-top: 15px;
-    border: 0 solid #ea7e7e;
+    border: 0 solid #a79784;
     border-width: 2px 2px 0 0;
     transform: rotate(45deg);
-    box-shadow: 2px -1px 2px -1px #ffc0c0;
+    box-shadow: 2px 0px 1px -1px #f1ebe4;
 }

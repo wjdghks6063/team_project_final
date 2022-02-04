@@ -144,13 +144,13 @@
                                 		<span class="donation-parameter-green" style="width:<fmt:formatNumber  pattern="###" value="${gage}" />%;" max="100%"></span> <!--width 값 변화에 따라 게이지 량 변경-->
                            				<strong class="donation-parameter-num"><fmt:formatNumber  pattern="###" value="${gage}" />% </strong>
                             <strong class="donation-parameter-money"><span style="color:#10c838;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
-                            /<span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
+                            / <span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
                            			</c:when>
                            			<c:when test="${gage >= 100 }"> 
                                 		<span class="donation-parameter-blue" style="width:100%;" max="100%";></span> <!--width 값 변화에 따라 게이지 량 변경-->
                            				<strong class="donation-parameter-num2"><fmt:formatNumber  pattern="###" value="${gage}" />% </strong>
                             <strong class="donation-parameter-money"><span style="color: #00BFFF;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
-                            /<span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
+                            / <span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
                            			</c:when>
                            		</c:choose>	
                             </div>
@@ -176,7 +176,7 @@
 	
 	<br>
 	<c:if test="${session_level eq 'top'}">
-	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn" style="background-color:#f0f0f0;font-family: 'Dongle';">
+	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn">
 	</c:if>
 
 

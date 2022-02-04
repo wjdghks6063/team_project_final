@@ -9,9 +9,10 @@
 .i-arr-go.ty-i::after { border-color:#ff5000; }
 
 
+
 /*메인 박스 */
 .contents {
-    max-width: 1440px; /*1140px으로 변경 여부*/
+    max-width: 1140px;
     padding: 88px 20px 130px;
     margin: 0 auto;
 }
@@ -47,8 +48,8 @@
 .tab-3::before {
     content: '';
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -100vw;
+    right: -100vw;
     bottom: 0;
     height: 1px;
     background: #c8c8c8;

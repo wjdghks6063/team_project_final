@@ -147,7 +147,7 @@
                             </div>
                             <strong class="donation-parameter-num"><fmt:formatNumber  pattern="###" value="${gage}" />% </strong>
                             <strong class="donation-parameter-money"><span style="color:#10c838;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
-                            /<span style="color:#c0c0c0;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
+                            / <span style="color:#c0c0c0;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
                         </div>    
                     </a>
                 </li>
@@ -164,7 +164,7 @@
 			%>
 	</div>	
 	<br>
-	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn" style="background-color:#f0f0f0;font-family: 'Dongle';">
+	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn">
 							
 
 

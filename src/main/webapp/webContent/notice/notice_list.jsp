@@ -237,7 +237,7 @@
 	
 	
 	<br>
-	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn" style="background-color:#f0f0f0;font-family: 'Dongle';">
+	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn">
 								
 
 

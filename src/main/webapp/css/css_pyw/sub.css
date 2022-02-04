@@ -113,12 +113,11 @@ h1.menu-bar {
     text-align: center;
     list-style: none;
     border-radius: 25px;
-    /* background-color: #ff6781; */
-    /* text-shadow: 2px 2px 2px #ff3399; */
     border: 1px solid #935b94;
     margin-bottom: 10px;
     flex-grow: 1;
     flex-basis: 200px;
+    box-shadow: 1px 1px 4px #935b94;
 }
 
 .sub-search li:hover{
@@ -171,7 +170,29 @@ h1.menu-bar {
 .table th {background:#f0f0f0; border:NONE; } 
 .table td {border:none; }
 .table .file {width:95%; height:40px; margin:10px; border:none; font-size:12px; font-family: 'Dongle';   background-color:#fff;}
-input.btn {float:right;width:95px; height:40px; border:1px solid #dcddc; background:0 none; border-radius: 25px; cursor:pointer; margin:10px;}
+input.btn {
+    float: right;
+    width: 95px;
+    height: 40px;
+    border: 1px solid #dcddc;
+    background: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    font-family: 'maru-buri-reg';
+    background-color: #f1ebe4;
+    box-shadow: 1px 1px 3px #9e978e;
+    color: #79726a;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #afa79a66;
+}
+input.btn:hover {
+    color: #fffff6;
+    background-color: #bbb6b3;
+    box-shadow: inset 1px 1px 3px #8e7f6d;
+    transition: background-color .3s, border .3s, color .3s, margin .3s;
+}
+
 .title {width:95%; height:40px; padding:10px; margin:10px; border:none; font-family: 'Dongle'; font-size:15px; background-color:#fff;}
 .title2 {margin-bottom:20px; text-align:center;width:95%; height:80px; padding:10px; margin:10px; border:none; font-family: 'galmat'; font-size:45px; background-color:#f0f0f0; color:#333333;}
 .tser{margin-left:20px;height:25px;}
