@@ -120,8 +120,8 @@ public class MemberController {
 			boolean mail_ok_gubun = true;
 			MailContent ms = new MailContent();
 			String mailSet_Server="smtp.naver.com";
-			String mailSet_ID="chlchlrnsrns"; // 보내는 메일 아이디
-			String mailSet_PW="Q54MFWQE46RF"; // 보내는 메일 비밀번호
+			String mailSet_ID=""; // 보내는 메일 아이디
+			String mailSet_PW=""; // 보내는 메일 비밀번호
 			
 			String mailFromName ="IseeU 인증번호 안내";
 			String mailFromAddress ="chlchlrnsrns@naver.com";  // 보내는 사람 이메일주소
