@@ -84,7 +84,7 @@
     <div id ="header-main">
         <div id ="header-top">
             <h1 class="logo-box">
-                <a href="" class="logo-img"></a>
+                <a href="/" class="logo-img"></a>
             </h1>
             <!-- 헤드 메뉴 내용 -->
             <!-- 헤드 메뉴 내용 -->

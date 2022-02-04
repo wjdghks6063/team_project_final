@@ -26,7 +26,7 @@
     font-weight: bold;
     height: 46px;
     line-height: 46px;
-    text-shadow: 0.5px 0.8px #89515140, 0.5px 1.5px #ea7e7e;
+    text-shadow: 0.5px 0.8px #898785, 0.5px 1.5px #988888;
 }
 .paging .pag-prev, .paging .pag-next, .paging .pag-first, .paging .pag-last {
     min-width: 38px;
@@ -66,7 +66,7 @@
 }
 .paging .num a {
     display: inline-block;
-    background-color: #FFE0E0;
+    background-color: #e3ded9;
     box-shadow: 1px 1px 3px #d69c9c;
 }
 .paging .num a:hover {
