@@ -113,18 +113,7 @@
 		  <ul class="donation-img-list">
                 <li class="donation-card-list">
                     <a href="" class="donation-card-a">
-                        <div class="donation-card-pic">
-                            <img loading="lazy" src="img/sub_img/thank.jpg" alt="" style="width:265px; height:200px; background-color:#ffb6c1;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
-                        </div>
-                        <div class="donation-card-content-box" style="background-color:#ffb6c1;">
-                            <strong class="donation-card-content-title">오늘 하루 여러분의 관심과 사랑입니다.</strong>
-                            <div class="donation-comp">총 모금 달성도</div>
-                            <div class="donation-parameter-bar">
-                                <span class="donation-parameter-green" style="width: 65%;"></span> <!--width 값 변화에 따라 게이지 량 변경-->
-                            </div>
-                            <strong class="donation-parameter-num">72%</strong>
-                            <strong class="donation-parameter-money">$366,222,230</strong>
-                        </div>    
+                        
                     </a>
                 </li>
                 
@@ -132,7 +121,7 @@
                 <li class="donation-card-list">
                     <a href="javascript:goView('${dtos.getNo()}')" class="donation-card-a">
                         <div class="donation-card-pic">
-                            <img loading="lazy" src="donaimg/dona/${dtos.getAttach()}" alt="기부메인" style="width:265px; height:200px;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
+                            <img loading="lazy" src="donaimg/dona/${dtos.getAttach()}" alt="기부메인" style="width:298px; height:200px;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
                         </div>
                         <div class="donation-card-content-box">
                             <strong class="donation-card-content-title">${dtos.getTitle()}</strong>
@@ -141,19 +130,27 @@
                           	 <c:set var="gage" value="${dtos.getTotal() / dtos.getGoal() *100}"/>
                           		<c:choose>
                           			<c:when test="${gage < 100 }"> 
-                                		<span class="donation-parameter-green" style="width:<fmt:formatNumber  pattern="###" value="${gage}" />%;" max="100%"></span> <!--width 값 변화에 따라 게이지 량 변경-->
-                           				<strong class="donation-parameter-num"><fmt:formatNumber  pattern="###" value="${gage}" />% </strong>
-                            <strong class="donation-parameter-money"><span style="color:#10c838;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
-                            / <span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
-                           			</c:when>
-                           			<c:when test="${gage >= 100 }"> 
+                                		<span class="donation-parameter-green" style="width:<fmt:formatNumber  pattern="###" value="${gage}" /> %;" max="100%"></span> <!--width 값 변화에 따라 게이지 량 변경-->
+                                	</c:when>
+                                	<c:when test="${gage >= 100 }">
                                 		<span class="donation-parameter-blue" style="width:100%;" max="100%";></span> <!--width 값 변화에 따라 게이지 량 변경-->
-                           				<strong class="donation-parameter-num2"><fmt:formatNumber  pattern="###" value="${gage}" />% </strong>
-                            <strong class="donation-parameter-money"><span style="color: #00BFFF;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
-                            / <span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
+                                	</c:when>
+                                </c:choose>			
+                             </div>
+                             	<c:choose>
+                             		<c:when test="${gage < 100 }"> 
+                           				<strong class="donation-parameter-num"><fmt:formatNumber  pattern="###" value="${gage}" /> % </strong>
+			                            <strong class="donation-parameter-money"><span style="color:#10c838;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
+			                            / <span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
                            			</c:when>
-                           		</c:choose>	
-                            </div>
+                           			
+                           			<c:when test="${gage >= 100 }"> 
+                           				<strong class="donation-parameter-num2"><fmt:formatNumber  pattern="###" value="${gage}" /> % </strong>
+			                            <strong class="donation-parameter-money"><span style="color: #00BFFF;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
+			                            / <span style="color:#c0c0c0;font-size:14px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
+                           			</c:when>
+                           		</c:choose>
+                            
                             
                         </div>    
                     </a>

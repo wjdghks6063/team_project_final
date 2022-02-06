@@ -168,18 +168,8 @@ function check(){
 <body>
 	<!--서브 헤더 -->
 	<div class="sub-header sub-header-give">
-		<h1 class="sub-title"><span class="text">기 부</span></h1>
-		<span class="deco-box"><i class="deco-1"></i><i class="deco-2"></i></span>
-
-		<div class="sub-menu">
-			<div class="menu-in">
-				<div class="menu-form">
-					<li class="home"><a href="/" class="home-in"><span class="pos i-home">홈</span></a></li>
-					<li class="dep" data-dropdown=''><button type="button" data-act='title' data-addtitle="this">회원</button></li>
-					<li class="dep" data-dropdown=''><button type="button" data-act='title' data-addtitle="this">로그인</button></li>
-				</div>
-			</div>
-		</div>
+		<h1 class="sub-title"><span class="text">로그인</span></h1>
+		<span class="deco-box"><i class="deco-2"></i></span>
 	</div>
 
     

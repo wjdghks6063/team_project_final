@@ -1055,7 +1055,7 @@
 
 	/* paging */
 	.paging { margin-top:47px; }
-	.paging a, .paging span.active { font-size:16px; min-width:46px; height:46px; line-height:46px; }
+	.paging a, .paging span.active { font-size:16px; min-width:40px; height:40px; line-height:40px; }
 	.paging .num { padding:0 15px; }
 	.paging .num a { display:inline-block; }
 	.paging .pag-prev, .paging .pag-next, .paging .pag-first, .paging .pag-last { min-width:38px; }

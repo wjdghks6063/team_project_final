@@ -12,7 +12,7 @@
 .donation-parameter-num2{
     display: inline-block;
     margin-top: 11px;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: -.2px;
     color:#00BFFF;
 }
@@ -97,6 +97,7 @@
 }
 ul.mini-menu {
     display: flex;
+    justify-content: flex-end;
 }
 
 h1.menu-bar {

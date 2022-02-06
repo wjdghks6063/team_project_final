@@ -179,28 +179,23 @@ address,strong{font-style:normal; font-weight:normal;}
     overflow: hidden;
     margin-top: 20px;
     font-size: 0px; /*폰트에 따라서 display:inline-block 요소를 사용했을 때 공백이 생길 수 있다. 공백 제거법으로 상위클래스의 폰트크기를 없앤다.*/
-}
-.donation-img-list li {
-    //margin-left:24px;
-    margin-right:10px;
-}
-.donation-img-list li:first-child {
-    margin-left:0px;
+    text-align: center;
 }
 
 .donation-card-list{
     display: inline-block;
     vertical-align: top;
     padding-top: 20px;
+    text-align: left;
 }
 .donation-card-a{
     float: left;
     position: relative;
-    width: 267px;
+    width: 300px;
     height: 363px;
     border: 1px solid rgba(0,0,0,.11);
     background-color: #fff;
-/* 폰트 보류    font-family: NanumSquareWebFont,dotum,Sans-serif; */
+    margin: 0 0 24px 24px;
 }
 .donation-card-a::after{
     position: absolute;
@@ -215,7 +210,7 @@ address,strong{font-style:normal; font-weight:normal;}
 } 
 
 .donation-card-pic{
-    width: 265px;
+    width: 298px;
     height: 200px;
     background-color: #ccc;
 }

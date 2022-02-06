@@ -129,7 +129,7 @@
 											
 						<td>
 							<a href="javascript:goView('${dtos.getNo()}')">
-							<img src="donaimg/local/${dtos.getAttach()}" alt="뉴스1" style=" width:200px;height:100px;"></a></td>
+							<img src="donaimg/local/${dtos.getAttach()}" alt="뉴스1" style=" width:200px;height:100px; margin:5px;"></a></td>
 					
 						<td><a style="font-size:15px;" href="javascript:goView('${dtos.getNo()}')">${dtos.getTitle()}</a></td>
 					

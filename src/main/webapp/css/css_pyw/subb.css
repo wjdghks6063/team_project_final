@@ -7,7 +7,6 @@
 /****************************** RESET ******************************/
 html, body { height:100%; text-size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button, a,span, figure  { margin:0; padding:0; box-sizing:border-box; }
-body, input, select, textarea, button, table { font-family:'Noto Sans KR', sans-serif; font-size:16px; line-height:1.4; color:#000; word-break:keep-all; word-wrap:break-word; }
 h1, h2, h3, h4, h5, h6 { font-weight:inherit; font-size:inherit; }
 fieldset { border:0; }
 img { border:0; vertical-align:middle; }

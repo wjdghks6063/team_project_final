@@ -117,7 +117,7 @@
                 <li class="donation-card-list">
                     <a href="" class="donation-card-a">
                         <div class="donation-card-pic">
-                            <img loading="lazy" src="img/sub_img/thank2.jpg" alt="" style="width:265px; height:200px; background-color:#ffb6c1;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
+                            <img loading="lazy" src="img/sub_img/thank2.jpg" alt="" style="width:298px; height:200px; background-color:#ffb6c1;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
                         </div>
                         <div class="donation-card-content-box" style="background-color:#ffb6c1;">
                             <strong class="donation-card-content-title">오늘 하루 여러분의 관심과 사랑입니다.</strong>
@@ -135,7 +135,7 @@
                 <li class="donation-card-list">
                     <a href="javascript:goView('${dtos.getNo()}')" class="donation-card-a">
                         <div class="donation-card-pic">
-                            <img loading="lazy" src="donaimg/vol/${dtos.getAttach()}" alt="기부메인" style="width:265px; height:200px;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
+                            <img loading="lazy" src="donaimg/vol/${dtos.getAttach()}" alt="기부메인" style="width:298px; height:200px;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
                         </div>
                         <div class="donation-card-content-box">
                             <strong class="donation-card-content-title">${dtos.getTitle()}</strong>
@@ -145,7 +145,7 @@
                           	 
                                 <span class="donation-parameter-green" style="width:${gage}%;" max="100%"></span> <!--width 값 변화에 따라 게이지 량 변경-->
                             </div>
-                            <strong class="donation-parameter-num"><fmt:formatNumber  pattern="###" value="${gage}" />% </strong>
+                            <strong class="donation-parameter-num"><fmt:formatNumber  pattern="###" value="${gage}" /> % </strong>
                             <strong class="donation-parameter-money"><span style="color:#10c838;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getTotal()}"/></span>
                             / <span style="color:#c0c0c0;font-size:15px;">₩ <fmt:formatNumber  pattern="###,###,###,###" value="${dtos.getGoal()}"/></span></strong>
                         </div>    

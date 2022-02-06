@@ -64,13 +64,6 @@
 		</div>
 <!-- 서브 페이지-->	
 <div class="sub-main">
-	
-	<div class="sub-search">
-	<h3 class="donation-text-box"><a href="" class="donation-text">질문게시판입니다.. <i class="fas fa-chevron-right"></i></a>
-		<br>
-
-	</div>
-
 	<div class="container">
 	  <div class="search_wrap">
 		<div class="record_group">

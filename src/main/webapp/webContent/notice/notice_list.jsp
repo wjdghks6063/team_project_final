@@ -66,11 +66,6 @@
 <!-- 서브 페이지-->	
 <div class="sub-main">
 	
-	<div class="sub-search">
-	<h3 class="donation-text-box"><a href="" class="donation-text">100% 전하는 기부 <i class="fas fa-chevron-right"></i></a>
-		<br>
-
-	</div>
 	<div class="sub-content">
 			 
 <style>
