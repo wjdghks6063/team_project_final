@@ -62,7 +62,7 @@
 		view.t_no.value=no;
 		view.t_gubun.value="View";
 		view.method="post";
-		view.action="Donation";
+		view.action="Volunteer";
 		view.submit();
 	}
 	function goSearchSelect(select1,search){

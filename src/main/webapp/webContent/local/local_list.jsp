@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <link href="css/paging.css" rel="stylesheet"> <!--파트너 css-->
+ <link rel="stylesheet" type="text/css" href="css/css_pyw/sub.css" />
+<link rel="stylesheet" type="text/css" href="css/css_pyw/subb.css" />
+<link rel="stylesheet" type="text/css" href="css/css_pyw/subba_yw.css" />
 	<!--##### // Visual & LNB #####-->
 <%@ include file = "../common_header_yw.jsp" %>
 
@@ -68,28 +71,28 @@
 		<input type="hidden" name="t_search">
 	<div class="sub-search">
 		<ul class="mini-menu">
-                <li>
-                   	<a href="javascript:goSearch('')"  >
-						<h1 class="menu-bar"><i class="fas fa-globe-asia"></i></h1>전체 검색
-					</a>
-				</li>
+				<a href="javascript:goSearch('')"  >
+	                <li>
+						<h1 class="menu-bar">all-search</h1>전체 검색
+					</li>
+				</a>
                    
-				<li>
-					<a href="javascript:goSearch('donation')" >
-						<h1 class="menu-bar"><i class="fas fa-child"></i></h1>기부
-					</a>
-				</li>
-                   
-				<li>
-					<a href="javascript:goSearch('volulteer')">
-						<h1 class="menu-bar"><i class="fas fa-user"></i></h1>봉사
-					</a>
-				</li>
+                <a href="javascript:goSearch('donation')" >   
+					<li>
+						<h1 class="menu-bar">donation</h1>기부
+					</li>
+                </a>
+                
+                <a href="javascript:goSearch('volulteer')">
+					<li>
+						<h1 class="menu-bar">volunteer</h1>봉사
+					</li>
+				</a>
 		</ul>
 	</div>
 	</form>
 	
-	<div class="sub-content">
+	<div class="sub-content-local">
 			 <div class="donation-box">
         
 

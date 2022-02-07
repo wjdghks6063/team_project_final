@@ -49,11 +49,18 @@ function goSearch(){
 	goPage.action="Manager";
 	goPage.submit();
 }
-function goView(no){
+function goViewDona(no){
 	view.t_no.value=no;
 	view.t_gubun.value="View";
 	view.method="post";
 	view.action="Donation";
+	view.submit();
+}
+function goViewVol(no){
+	view.t_no.value=no;
+	view.t_gubun.value="View";
+	view.method="post";
+	view.action="Volunteer";
 	view.submit();
 }
 function goManMember(){
@@ -146,7 +153,7 @@ function goManMember(){
 								<c:forEach items="${PWD_list}" var="pwd_list">
 									<li class="item_news type_donation">
 										<div class="card_news">
-											<a href="javascript:goView('${pwd_list.getNo()}')" class="link"></a>
+											<a href="javascript:goViewDona('${pwd_list.getNo()}')" class="link"></a>
 											<p class="text_content">${pwd_list.getDo_title()} (날짜:
 												${pwd_list.getDo_start_date()} ~ ${pwd_list.getDo_end_date()})</p>
 											<span class="text_information">${pwd_list.getDo_name()}</span>
@@ -198,7 +205,7 @@ function goManMember(){
 								<c:forEach items="${PWV_list}" var="pwv_list">
 								<li class="item_news type_funding">
 									<div class="card_news">
-										<a href="javascript:goView('${pwv_list.getNo()}')" class="link"></a>
+										<a href="javascript:goViewVol('${pwv_list.getNo()}')" class="link"></a>
 										<p class="text_content">${pwv_list.getDo_title()} (장소: ${pwv_list.getDo_today()})</p>
 										<span class="text_information">${pwv_list.getDo_name()}</span> 
 										<span class="text_information">참여인원 : ${pwv_list.getDo_total()} / ${pwv_list.getDo_goal()} 명</span>

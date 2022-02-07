@@ -30,9 +30,6 @@
 <script src="js/summernote-ko-KR.js"></script>
 <script src="js/getsummernote.js"></script>
  <script src="/js/common.js"></script>
- <link rel="stylesheet" type="text/css" href="css/css_pyw/sub.css" />
-<link rel="stylesheet" type="text/css" href="css/css_pyw/subb.css" />
-<link rel="stylesheet" type="text/css" href="css/css_pyw/subba_yw.css" />
 </head>
 
 

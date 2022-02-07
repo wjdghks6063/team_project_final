@@ -54,40 +54,12 @@
 
 .sub-search {
 	width:1140px;
-	
-	/*background-color:#777777;*/
+}
 
-}
-/*
 .sub-search ul {
-	width: 95%;
-    margin: 0 auto;
-    max-width: 960px;
-	
+    height: 64px;
+    margin: 0 50px;
 }
-*/
-.sub-search ul {
-    width: 95%;
-    margin: 10px auto;
-    max-width: 960px;
-}
-/*
-.sub-search li {
-	float: left;
-    width: 18%;
-    
-	margin-right: 17px;
-    font-size: 25px;
-    line-height: 1.4;
-    color: #fff;
-    text-align: center;
-    list-style: none;
-	border-radius: 25px;
-	background-color:#ff6781;
-	text-shadow: 2px 2px 2px #ff3399;
-		
-}
-*/
 
 /* 추가 */
 .table thead tr {
@@ -97,57 +69,48 @@
 }
 ul.mini-menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+}
+.mini-menu a {
+	flex-grow: 1;
+    margin: 0 5px;
+    flex-basis: 0px;
 }
 
 h1.menu-bar {
     margin-top: 4px;
+    font-size: 16px;
 }
 
 .sub-search li {
-    float: left;
-    width: 170px;
-    margin-right: 17px;
     font-size: 20px;
     line-height: 1.4;
-    color: #8d4884;
+    color: #9b9a9a;
     text-align: center;
     list-style: none;
     border-radius: 25px;
-    border: 1px solid #935b94;
+    border: 1px solid #cccccc;
     margin-bottom: 10px;
-    flex-grow: 1;
-    flex-basis: 200px;
-    box-shadow: 1px 1px 4px #935b94;
+    box-shadow: 1px 1px 4px #cccccc;
+    font-family: haerye;
 }
 
-.sub-search li:hover{
-	 
-    color: #f5f1f2;
+.sub-search li:hover {
+    color: #ffffff;
     text-align: center;
     list-style: none;
     border-radius: 25px;
-    background-color: #955e96;
-    /* text-shadow: 2px 2px 2px #fff; */
-		
+    background-color: #cccccc;
 }
-/*
-.sub-search li a:hover{
-	
-    color: #f5f1f2;
-    text-align: center;
-    list-style: none;
-    border-radius: 25px;
-    background-color: #955e96;
-}
-*/
+
 .sub-content {
-	width: 100%;
-	
+    width: 100%;
     overflow: hidden;
-   /* padding: 20px 0;*/
-	/*background-color:#399393;*/
-	
+    margin: 0 70px;
+}
+.sub-content {
+    width: 100%;
+    overflow: hidden;
 }
 .main-story {
 	background: no-repeat center center;

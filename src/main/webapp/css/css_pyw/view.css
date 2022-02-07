@@ -11,7 +11,7 @@
 
 /*메인 박스 */
 .contents {
-    max-width: 1440px; /*1140px으로 변경 여부*/
+    max-width: 1140px;
     padding: 88px 20px 130px;
     margin: 0 auto;
 }
@@ -62,7 +62,6 @@
 
 .tab-3 {
     position: relative;
-    margin: 25px -20px 30px;
     font-size: 0;
     color: #888;
     text-align: center;
@@ -114,6 +113,8 @@
     display: inline-block;
     vertical-align: middle;
     padding-bottom: 3px;
+    font-family: haerye;
+        transition: none;
 }
 
 /*클릭 한 메뉴 */
@@ -275,7 +276,7 @@
 }
 
 .ir, .ir-b:before, .ir-a:after {
-    background-image: url(../img/btn-total.png);
+    background-image: url(../../img/btn-total.png);
     background-size: 500px 500px;
 }
 

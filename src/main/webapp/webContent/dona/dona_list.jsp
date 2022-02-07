@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link href="css/paging.css" rel="stylesheet"> <!--page css-->
+<link href="css/css_pyw/paging.css" rel="stylesheet"> <!--page css-->
+ <link rel="stylesheet" type="text/css" href="css/css_pyw/sub.css" />
+<link rel="stylesheet" type="text/css" href="css/css_pyw/subb.css" />
+<link rel="stylesheet" type="text/css" href="css/css_pyw/subba_yw.css" />
 
 	<!--##### // Visual & LNB #####-->
 <%@ include file = "../common_header_yw.jsp" %> 
@@ -105,18 +108,81 @@
 	</div>
 	</form>
 	<div class="sub-content">
-			 <div class="donation-box">
-        
-
-		</h3>    
-          
+	 <div class="donation-box">
 		  <ul class="donation-img-list">
-                <li class="donation-card-list">
-                    <a href="" class="donation-card-a">
-                        
-                    </a>
-                </li>
-                
+<style>
+.card_today {
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+    text-align: left;
+    float: left;
+}
+a.card_today_inner {
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 363px;
+    border: 1px solid rgba(0,0,0,.11);
+    background-color: #fff;
+    margin: 0 0 24px 24px;
+    background-color: #10c838;
+    text-align: center;
+    padding-top: 30px;
+}
+a.card_today_inner:hover {
+    color: inherit;
+}
+.card_today .label_today {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    padding: 6px 0 5px;
+    background-clip: padding-box;
+    background-color: #0da82f;
+    font-weight: 700;
+    letter-spacing: .3px;
+    font-size:14px;
+}
+.card_today .card_today_title {
+    display: block;
+    margin-top: 17px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -1px;
+}
+.card_today .card_today_text {
+    display: inline-block;
+    margin-top: 34px;
+    padding: 0 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.card_today .card_today_text:before {
+    display: block;
+    width: 29px;
+    height: 1px;
+    margin: 0 auto 37px;
+    background-color: #88e49c;
+    content: '';
+}
+.card_today .card_today_text .point {
+    font-weight: 700;
+    color: #fff;
+}
+</style>	  
+		  	<li class="card_today">
+		  		<a href="/introduction/DonationStatusGuide" class="card_today_inner">
+		  			<span class="label_today">Today</span> <strong class="card_today_title">오늘 함께한 기부금</strong> 
+		  			<span class="card_today_text"><strong class="point"><span class="scrollnumber" id="lines4">9,650</span>명</strong>이<br>
+			  			<strong class="point">
+			  				<span class="scrollnumber" id="lines5">86,140,200</span>원
+		  				</strong>을<br>기부하였습니다.
+	  				</span>
+  				</a>
+  			</li>
+		  	   
 			<c:forEach items="${t_dtos}" var="dtos">	
                 <li class="donation-card-list">
                     <a href="javascript:goView('${dtos.getNo()}')" class="donation-card-a">
@@ -130,7 +196,7 @@
                           	 <c:set var="gage" value="${dtos.getTotal() / dtos.getGoal() *100}"/>
                           		<c:choose>
                           			<c:when test="${gage < 100 }"> 
-                                		<span class="donation-parameter-green" style="width:<fmt:formatNumber  pattern="###" value="${gage}" /> %;" max="100%"></span> <!--width 값 변화에 따라 게이지 량 변경-->
+                                		<span class="donation-parameter-green" style="width:<fmt:formatNumber  pattern="###" value="${gage}" />%;" max="100%"></span> <!--width 값 변화에 따라 게이지 량 변경-->
                                 	</c:when>
                                 	<c:when test="${gage >= 100 }">
                                 		<span class="donation-parameter-blue" style="width:100%;" max="100%";></span> <!--width 값 변화에 따라 게이지 량 변경-->
@@ -156,7 +222,6 @@
                     </a>
                 </li>
 			</c:forEach>	
-			
 			</ul>	
 	</div>
 	

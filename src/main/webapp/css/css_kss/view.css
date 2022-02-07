@@ -63,7 +63,7 @@
 
 .tab-3 {
     position: relative;
-    margin: 25px -20px 30px;
+    margin: 25px -100px -20px 30px;
     font-size: 0;
     color: #888;
     text-align: center;
@@ -115,6 +115,8 @@
     display: inline-block;
     vertical-align: middle;
     padding-bottom: 3px;
+    font-family: haerye;
+    transition: none;
 }
 
 /*클릭 한 메뉴 */

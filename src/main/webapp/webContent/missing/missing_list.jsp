@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.*" %>    
+<%@ page import="java.util.*" %>
+<link href="css/paging.css" rel="stylesheet"> <!--파트너 css-->
     
 <%@ include file = "../common_header_kss.jsp" %>
 

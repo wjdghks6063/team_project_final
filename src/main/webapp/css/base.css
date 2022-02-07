@@ -24,6 +24,8 @@ address,strong{font-style:normal; font-weight:normal;}
 @font-face {font-family: 'maru-buri-reg'; src: url('../font/MaruBuri-Regular.ttf') format('truetype');}
 @font-face {font-family: 'maru-buri-semi-bold'; src: url('../font/MaruBuri-SemiBold.ttf') format('truetype');}
 @font-face {font-family: 'maru-buri-bold'; src: url('../font/MaruBuri-Bold.ttf') format('truetype');}
+@font-face {font-family: 'Bahagia'; src: url('../font/Bahagia.ttf') format('truetype');}
+
 
 
 

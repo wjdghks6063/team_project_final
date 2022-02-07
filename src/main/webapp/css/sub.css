@@ -91,14 +91,12 @@
 		
 }
 .sub-search li a:hover{
-	
     color: #ff6781;
     text-align: center;
     list-style: none;
 	border-radius: 25px;
 	background-color:#ffdfe8;
 	text-shadow: 2px 2px 2px #fff;
-		
 }
 
 .sub-content {

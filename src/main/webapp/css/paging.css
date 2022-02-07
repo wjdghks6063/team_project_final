@@ -21,11 +21,11 @@
     transition: all 0.3s ease;
 }
 .paging a, .paging span.active {
-    font-size: 18px;
-    min-width: 46px;
+    font-size: 16px;
+    min-width: 40px;
     font-weight: bold;
-    height: 46px;
-    line-height: 46px;
+    height: 40px;
+    line-height: 44px;
     text-shadow: 0.5px 0.8px #a59b8f, 0.5px 1.5px #a59b8f;
 }
 .paging .pag-prev, .paging .pag-next, .paging .pag-first, .paging .pag-last {

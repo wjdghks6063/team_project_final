@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link href="css/paging.css" rel="stylesheet"> <!--page css-->
+<link href="css/css_pyw/paging.css" rel="stylesheet"> <!--page css-->
+ <link rel="stylesheet" type="text/css" href="css/css_pyw/sub.css" />
+<link rel="stylesheet" type="text/css" href="css/css_pyw/subb.css" />
+<link rel="stylesheet" type="text/css" href="css/css_pyw/subba_yw.css" />
 	<!--##### // Visual & LNB #####-->
 <%@ include file = "../common_header_yw.jsp" %>
 
@@ -68,68 +71,125 @@
 		<input type="hidden" name="t_search">
 	<div class="sub-search">
 		<ul class="mini-menu">
-            <li>
-				<a href="javascript:goSearch('')"  >
-					<h1 class="menu-bar"><i class="fas fa-globe-asia"></i></h1>전체 검색
-				</a>
-			</li>
-                   
-			<li>
-				<a href="javascript:goSearch('yuseong')" >
-					<h1 class="menu-bar"><i class="fas fa-meteor"></i></h1>유성구
-				</a>
-			</li>
-                   
-			<li>
-				<a href="javascript:goSearch('dong-gu')">
-					<h1 class="menu-bar"><i class="far fa-caret-square-right"></i></h1>동구
-				</a>
-			</li>
-                   
-               <li>
-               	<a href="javascript:goSearch('jung-gu')">
-					<h1 class="menu-bar"><i class="far fa-minus-square"></i></h1>중구
-				</a>
-			</li>
-                     
-			<li>
-				<a href="javascript:goSearch('seo-gu')" >
-					<h1 class="menu-bar"><i class="far fa-caret-square-left"></i></h1>서구
-				</a>
-			</li>
-                   
-			<li>
-				<a href="javascript:goSearch('daedeok')">
-					<h1 class="menu-bar"><i class="far fa-caret-square-up"></i></h1>대덕구
-				</a>
-			</li>
+			<a href="javascript:goSearch('')"  >
+	            <li>
+					<h1 class="menu-bar">all-search</h1>전체 검색
+				</li>
+			</a>
+            
+           <a href="javascript:goSearch('yuseong')" >
+				<li>
+					<h1 class="menu-bar">yuseong</h1>유성구
+				</li>
+           </a>
+           
+           <a href="javascript:goSearch('dong-gu')">
+				<li>
+					<h1 class="menu-bar">dong-gu</h1>동구
+				</li>
+           </a>
+           
+           <a href="javascript:goSearch('jung-gu')">
+				<li>
+					<h1 class="menu-bar">jung-gu</h1>중구
+				</li>
+		   </a>
+		   
+		   <a href="javascript:goSearch('seo-gu')" >
+				<li>
+					<h1 class="menu-bar">seo-gu</h1>서구
+				</li>
+			</a>
+			    
+			<a href="javascript:goSearch('daedeok')"> 
+				<li>
+					<h1 class="menu-bar">daedeok</h1>대덕구
+				</li>
+			</a>
 		</ul>
 	</div>
 	</form>
+
+<style>
+.card_today {
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+    text-align: left;
+    float: left;
+}
+a.card_today_inner {
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 363px;
+    border: 1px solid rgba(0,0,0,.11);
+    background-color: #fff;
+    margin: 0 0 24px 24px;
+    background-color: #4697e2;
+    text-align: center;
+    padding-top: 30px;
+}
+a.card_today_inner:hover {
+    color: inherit;
+}
+.card_today .label_today {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    padding: 6px 0 5px;
+    background-clip: padding-box;
+    background-color: #6da4d6;
+    font-weight: 700;
+    letter-spacing: .3px;
+    font-size:14px;
+}
+.card_today .card_today_title {
+    display: block;
+    margin-top: 17px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -1px;
+}
+.card_today .card_today_text {
+    display: inline-block;
+    margin-top: 34px;
+    padding: 0 5px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.card_today .card_today_text:before {
+    display: block;
+    width: 29px;
+    height: 1px;
+    margin: 0 auto 37px;
+    background-color: #6da4d6;
+    content: '';
+}
+.card_today .card_today_text .point {
+    font-weight: 700;
+    color: #fff;
+}
+.write-btn {
+    position: relative;
+    right: 160px;
+}
+</style>
 	
 	<div class="sub-content">
 			 <div class="donation-box">
-        
-
-		</h3>    
-          
 		  <ul class="donation-img-list">
-                <li class="donation-card-list">
-                    <a href="" class="donation-card-a">
-                        <div class="donation-card-pic">
-                            <img loading="lazy" src="img/sub_img/thank2.jpg" alt="" style="width:298px; height:200px; background-color:#ffb6c1;"> <!--이미지 박스 크기값 설정 및 크기에 맞지않을 경우 알아서 채우기 설정-->
-                        </div>
-                        <div class="donation-card-content-box" style="background-color:#ffb6c1;">
-                            <strong class="donation-card-content-title">오늘 하루 여러분의 관심과 사랑입니다.</strong>
-                            <div class="donation-comp">총 모금 달성도</div>
-                            <div class="donation-parameter-bar">
-                                <span class="donation-parameter-green" style="width: 65%;"></span> <!--width 값 변화에 따라 게이지 량 변경-->
-                            </div>
-                            <strong class="donation-parameter-num">72%</strong>
-                            <strong class="donation-parameter-money">$366,222,230</strong>
-                        </div>    
-                    </a>
-                </li>
+            <li class="card_today">
+		  		<a href="/introduction/DonationStatusGuide" class="card_today_inner">
+		  			<span class="label_today">Today</span> <strong class="card_today_title">오늘 함께한 봉사단</strong> 
+		  			<span class="card_today_text"><strong class="point"><span class="scrollnumber" id="lines4">9,650</span>개</strong>의 봉사단체와<br>
+			  			<strong class="point">
+			  				<span class="scrollnumber" id="lines5">86,140,200</span>명
+		  				</strong>이<br>함께 하였습니다.
+	  				</span>
+  				</a>
+  			</li>
                 
 			<c:forEach items="${t_dtos}" var="dtos">	
                 <li class="donation-card-list">
@@ -164,8 +224,9 @@
 			%>
 	</div>	
 	<br>
-	<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn">
-							
+	<div class="write-btn">
+		<input type="button" onclick="goWriteForm()" value="글 쓰 기" class="btn">
+	</div>					
 
 
 
